@@ -1,0 +1,97 @@
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Dashboard Container Styling */
+.dashboard-container {
+    position: relative;
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/3184638/pexels-photo-3184638.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: fadeInBackground 1.5s ease-in-out; /* Background fade-in animation */
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    animation: slideIn 1s ease-out; /* Slide-in effect for welcome message */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Heading */
+.welcome-message h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-out; /* Fade-in effect for heading */
+}
+
+/* Subtext */
+.welcome-message p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out; /* Fade-in effect for paragraph */
+}
+
+/* Primary Button Styling */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition */
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Primary Button Hover Effect */
+.btn-primary {
+    background-color: #00bfa5;
+}
+
+.btn-primary:hover {
+    background-color: #008c7f;
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Keyframe Animation for Fade-In Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keyframe Animation for Background Fade-In Effect */
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keyframe Animation for Slide-In Effect */
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

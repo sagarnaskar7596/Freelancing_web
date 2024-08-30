@@ -1,0 +1,112 @@
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/3184300/pexels-photo-3184300.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: fadeInBackground 1s ease-in-out; /* Background fade-in animation */
+}
+
+/* Overlay to Darken Background */
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    animation: slideIn 1s ease-out; /* Slide-in effect for overlay content */
+}
+
+/* Main Heading */
+.overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-out; /* Fade-in effect for heading */
+}
+
+/* Subtext */
+.overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out; /* Fade-in effect for paragraph */
+}
+
+/* Call-to-Action Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Primary Button */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+/* Primary Button Styling */
+.btn-primary {
+    background-color: #00bfa5;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #008c7f;
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Secondary Button Styling */
+.btn-secondary {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #e05a4f;
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Keyframe Animation for Fade-In Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keyframe Animation for Background Fade-In Effect */
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keyframe Animation for Slide-In Effect */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

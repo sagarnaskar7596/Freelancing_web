@@ -1,0 +1,94 @@
+/* Basic Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the Login Form */
+.login-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Animation effect for the container */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Error Message Styling */
+.error-msg {
+    color: #ff4d4d;
+    margin-bottom: 15px;
+    animation: shake 0.3s ease-in-out; /* Shake animation on error */
+}
+
+/* Form Input Styling */
+.login-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s; /* Smooth transition on border color */
+}
+
+/* Input Focus Animation */
+.login-form input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+/* Button Styling */
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+/* Button Hover and Active Animation */
+.login-form button:hover {
+    background-color: #6a11cb;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.login-form button:active {
+    transform: translateY(2px); /* Press effect on click */
+}
+
+/* Keyframe Animation for Fade-In Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Keyframe Animation for Shake Effect */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}

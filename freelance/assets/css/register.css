@@ -1,0 +1,97 @@
+/* Basic Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f7971e, #ffd200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the Registration Form */
+.register-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: slideDown 1s ease-out; /* Slide down effect on load */
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Success Message Styling */
+.success-msg {
+    color: #28a745;
+    margin-bottom: 15px;
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation for success message */
+}
+
+/* Form Input Styling */
+.register-form input,
+.register-form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s; /* Smooth transition on border color */
+}
+
+/* Input Focus Animation */
+.register-form input:focus,
+.register-form select:focus {
+    border-color: #f7971e;
+    box-shadow: 0 0 5px rgba(247, 151, 30, 0.5);
+}
+
+/* Button Styling */
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f7971e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+/* Button Hover and Active Animation */
+.register-form button:hover {
+    background-color: #ffd200;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.register-form button:active {
+    transform: translateY(2px); /* Press effect on click */
+}
+
+/* Keyframe Animation for Slide-Down Effect */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframe Animation for Fade-In Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
